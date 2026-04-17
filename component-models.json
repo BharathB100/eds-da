@@ -187,7 +187,7 @@
     ]
   },
   {
-    "id": "hero",
+    "id": "image-block",
     "fields": [
       {
         "component": "reference",
