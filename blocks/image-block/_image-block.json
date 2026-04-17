@@ -1,0 +1,35 @@
+{
+  "definitions": [
+    {
+      "...": "../../../platform-blocks/image-block/_image-block.json#/definitions"
+    }
+  ],
+  "filters": [
+    {
+      "...": "../../../platform-blocks/image-block/_image-block.json#/filters"
+    }
+  ],
+  "models": [
+    {
+      "id": "image-block",
+      "fields": [
+        {
+          "...": "../../../platform-blocks/image-block/_image-block.json#/models/image-block/fields"
+        },
+        {
+          "component": "checkbox-group",
+          "label": "Full width",
+          "name": "fullWidth",
+          "valueType": "string",
+          "description": "Select this checkbox to make the image full width",
+          "options": [
+            {
+              "name": "Full width",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
