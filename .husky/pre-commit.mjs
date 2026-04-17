@@ -3,8 +3,8 @@ import { exec } from "node:child_process";
 const run = (cmd) => new Promise((resolve, reject) => exec(
   cmd,
   (error, stdout, stderr) => {
-    if (error) reject();
-    if (stderr) reject(stderr);
+    if (error) reject(error);
+    // Don't reject on stderr - Git warnings (like CRLF) go to stderr but aren't errors
     resolve(stdout);
   }
 ));
