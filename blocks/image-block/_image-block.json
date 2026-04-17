@@ -1,20 +1,112 @@
 {
   "definitions": [
     {
-      "...": "../../../platform-blocks/image-block/_image-block.json#/definitions"
+      "title": "Image Block",
+      "id": "image-block",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Image Block",
+              "model": "image-block"
+            }
+          }
+        }
+      }
     }
   ],
-  "filters": [
-    {
-      "...": "../../../platform-blocks/image-block/_image-block.json#/filters"
-    }
-  ],
+  "filters": [],
   "models": [
     {
       "id": "image-block",
       "fields": [
         {
-          "...": "../../../platform-blocks/image-block/_image-block.json#/models/image-block/fields"
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "/content/dam/custom-asset-picker/image.config.json",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "required": true,
+          "description": "Upload Image for the section content1"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset-mimetype",
+          "valueType": "string",
+          "name": "imageMimeType"
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Image Alt text",
+          "valueType": "string",
+          "required": true,
+          "description": "Pick alt text from AEM DAM with ability to override it"
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset",
+          "configUrl": "/content/dam/custom-asset-picker/image.config.json",
+          "valueType": "string",
+          "name": "mobImage",
+          "label": "Mobile Image",
+          "description": "Select or upload an icon for the tile."
+        },
+        {
+          "component": "custom-asset-namespace:custom-asset-mimetype",
+          "valueType": "string",
+          "name": "mobImageMimeType"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "mobImageAlt",
+          "label": "Mobile Image Alt text",
+          "description": "Pick alt text from AEM DAM with ability to override it"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageblock_label",
+          "label": "Label",
+          "description": "Add a label"
+        },
+        {
+          "component": "richtext",
+          "name": "imageblock_rte",
+          "label": "Extended Image Description",
+          "valueType": "string",
+          "description": "Enter the Image description"
+        },
+        {
+          "component": "select",
+          "name": "classes_description",
+          "label": "Description Font Size",
+          "description": "Select the font size for the Description",
+          "options": [
+            { "name": "100px", "value": "description-fs-100px" },
+            { "name": "60px", "value": "description-fs-60px" },
+            { "name": "48px", "value": "description-fs-48px" },
+            { "name": "36px", "value": "description-fs-36px" },
+            { "name": "32px", "value": "description-fs-32px" },
+            { "name": "28px", "value": "description-fs-28px" },
+            { "name": "24px", "value": "description-fs-24px" },
+            { "name": "20px", "value": "description-fs-20px" },
+            { "name": "16px", "value": "description-fs-16px" },
+            { "name": "14px", "value": "description-fs-14px" }
+          ]
+        },
+        {
+          "component": "checkbox-group",
+          "label": "Square edges",
+          "name": "squareEdges",
+          "valueType": "string",
+          "description": "Select this checkbox to apply square edges on standalone image",
+          "options": [
+            {
+              "name": "Enable Square edges",
+              "value": "true"
+            }
+          ]
         },
         {
           "component": "checkbox-group",
