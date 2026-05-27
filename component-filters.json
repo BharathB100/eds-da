@@ -2,29 +2,132 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "tabs-section",
+      "content-section-container",
+      "column-container"
     ]
   },
   {
     "id": "section",
     "components": [
-      "accordion",
-      "cards",
-      "carousel",
-      "columns",
-      "embed",
-      "fragment",
-      "form",
-      "hero",
-      "image",
-      "quote",
-      "search",
-      "tabs",
-      "table",
       "text",
+      "image",
+      "button",
+      "title",
+      "cards",
+      "fragment",
+      "icon-card",
+      "promo-banner",
+      "anchor-links",
+      "two-column-with-image",
+      "primary-hero",
+      "table-version-two",
+      "table-version-two-2-columns",
+      "table-version-two-3-columns",
+      "table-version-two-4-columns",
+      "table-version-two-5-columns",
+      "table-version-two-6-columns",
+      "overlapping-block",
+      "brand-card",
+      "image-block",
+      "small-media-carousel",
+      "bulleted-icon-list",
+      "icon-tile",
+      "accordion",
+      "spacer-and-divider",
+      "horizontal-numeric-tile",
+      "additional-resource-card",
+      "price-card",
+      "quiz-block",
+      "promo-banner",
+      "crm-weight",
+      "hcp-coverage",
+      "doctor-discussion-guide",
+      "hcp-request-resources",
+      "text-component",
       "video",
-      "product-recommendations",
-      "image-block"
+      "external-video-player-link",
+      "small-width-media"
+    ]
+  },
+  {
+    "id": "content-section-container",
+    "components": [
+      "anchor-links",
+      "cards",
+      "fragment",
+      "two-column-with-image",
+      "table-version-two",
+      "table-version-two-2-columns",
+      "table-version-two-3-columns",
+      "table-version-two-4-columns",
+      "table-version-two-5-columns",
+      "table-version-two-6-columns",
+      "overlapping-block",
+      "brand-card",
+      "image-block",
+      "doctor-discussion-guide",
+      "small-media-carousel",
+      "bulleted-icon-list",
+      "primary-hero",
+      "icon-card",
+      "icon-tile",
+      "accordion",
+      "spacer-and-divider",
+      "horizontal-numeric-tile",
+      "additional-resource-card",
+      "price-card",
+      "quiz-block",
+      "promo-banner",
+      "video",
+      "crm-weight",
+      "hcp-coverage",
+      "hcp-request-resources",
+      "text-component",
+      "search",
+      "table"
+    ]
+  },
+  {
+    "id": "column-container",
+    "components": [
+      "cards",
+      "fragment",
+      "two-column-with-image",
+      "transparent-block",
+      "table-version-two",
+      "table-version-two-2-columns",
+      "table-version-two-3-columns",
+      "table-version-two-4-columns",
+      "table-version-two-5-columns",
+      "table-version-two-6-columns",
+      "overlapping-block",
+      "brand-card",
+      "image-block",
+      "small-media-carousel",
+      "bulleted-icon-list",
+      "icon-tile",
+      "row-break",
+      "icon-card",
+      "primary-hero",
+      "accordion",
+      "spacer-and-divider",
+      "horizontal-numeric-tile",
+      "additional-resource-card",
+      "promo-banner",
+      "column-break",
+      "text-component",
+      "video",
+      "external-video-player-link",
+      "small-width-media",
+      "search"
+    ]
+  },
+  {
+    "id": "tabs-section",
+    "components": [
+      "tabs"
     ]
   },
   {
@@ -34,43 +137,162 @@
     ]
   },
   {
+    "id": "additional-resource-card",
+    "components": [
+      "resource-card"
+    ]
+  },
+  {
+    "id": "anchor-links",
+    "components": [
+      "anchor-links-item"
+    ]
+  },
+  {
+    "id": "brand-card",
+    "components": [
+      "jump-link-item"
+    ]
+  },
+  {
+    "id": "bulleted-icon-list",
+    "components": [
+      "bulleted-icon-list-item"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
     ]
   },
   {
-    "id": "carousel",
+    "id": "external-video-player-link",
     "components": [
-      "carousel-item"
+      "external-video-player-link-item"
     ]
   },
   {
-    "id": "columns",
+    "id": "horizontal-numeric-tile",
     "components": [
-      "columns-row"
+      "numeric-tile"
     ]
   },
   {
-    "id": "columns-row",
-    "components": []
+    "id": "icon-card",
+    "components": [
+      "icon-card-item"
+    ]
   },
   {
-    "id": "columns-cell",
+    "id": "icon-tile-grid",
     "components": [
-      "text",
-      "image"
+      "tile"
+    ]
+  },
+  {
+    "id": "price-card",
+    "components": [
+      "green-card"
+    ]
+  },
+  {
+    "id": "small-media-carousel",
+    "components": [
+      "small-media-carousel-item"
+    ]
+  },
+  {
+    "id": "small-width-media",
+    "components": [
+      "small-width-media"
+    ]
+  },
+  {
+    "id": "table-version-two-2-columns",
+    "components": [
+      "table-version-two-col-2"
+    ]
+  },
+  {
+    "id": "table-version-two-3-columns",
+    "components": [
+      "table-version-two-col-3"
+    ]
+  },
+  {
+    "id": "table-version-two-4-columns",
+    "components": [
+      "table-version-two-col-4"
+    ]
+  },
+  {
+    "id": "table-version-two-5-columns",
+    "components": [
+      "table-version-two-col-5"
+    ]
+  },
+  {
+    "id": "table-version-two-6-columns",
+    "components": [
+      "table-version-two-col-6"
     ]
   },
   {
     "id": "table",
     "rte": {
       "toolbar": {
+        "format": [
+          "bold",
+          "italic",
+          "underline",
+          "strike"
+        ],
+        "alignment": [
+          "left",
+          "center",
+          "right",
+          "justify"
+        ],
+        "direction": [
+          "rtl",
+          "ltr"
+        ],
+        "indentation": [
+          "indent",
+          "outdent"
+        ],
+        "blocks": [
+          "paragraph",
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6",
+          "code_block"
+        ],
+        "list": [
+          "bullet_list",
+          "ordered_list"
+        ],
         "insert": [
-          "table"
+          "link",
+          "unlink",
+          "image",
+          "special_characters"
+        ],
+        "sr_script": [
+          "superscript",
+          "subscript"
+        ],
+        "editor": [
+          "removeformat"
         ],
         "sections": [
-          "insert"
+          "format",
+          "alignment",
+          "list"
         ]
       }
     }
@@ -78,7 +300,13 @@
   {
     "id": "tabs",
     "components": [
-      "tabs-item"
+      "tab"
+    ]
+  },
+  {
+    "id": "video",
+    "components": [
+      "video-item"
     ]
   }
 ]
